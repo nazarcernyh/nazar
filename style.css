@@ -1,0 +1,182 @@
+*{
+    margin: 0px;
+    padding: 0px
+}
+
+    body{
+        background-color: #d42f76;
+        min-width: 100vh;
+    }
+
+    header{
+        text-align: center;
+        font-size: 30px;
+        font-family: NinjaStrike;
+        color: black;
+        text-shadow: 3px 3px 0px #554646;
+    }
+    @font-face {
+        font-family: NinjaStrike;
+        src: url(assets/fonts/NinjaStrike.otf);
+    }
+   .lantern{
+       position: fixed  ;
+       width: 20%;
+       top: 10px;
+       animation: float 3s ease-in-out infinite;
+   }
+       @keyframes float {
+           0%{
+               transform: translatey(0px);
+           }
+           50%{
+                transform: translatey(-20px);
+           }
+           100%{
+                transform: translatey(0px);
+           }
+       }
+      
+   
+   .lantern.lf{
+       left: 0px;
+   }
+   .lantern.rt{
+       right: 0px;
+   }
+
+   .house{
+    margin: 0 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .roof{
+    width: 100%;
+    display: block;
+   }
+
+
+   .block{
+    flex: 1;
+    border: 5px solid black;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3rem;  ;
+
+   }
+.window{
+    border: 5px solid black;
+    background-color: rgba(239, 5, 5, 0.3);
+    text-align: center;
+    height: 100%;
+    padding: 1rem;  ;
+}
+
+   .chef{
+    width:80%;
+    border-radius: 20px;
+   }
+
+   .text{
+    font-size: 20px;
+    font-family: NinjaStrike;
+    color: black;
+    text-shadow: 3px 3px 0px #554646;
+   }
+
+   .window h2{
+    font-family: "NinjaStrike";
+    font-size: 2rem;
+    color: rgb(154, 255, 3);
+    margin-bottom: 1rem;
+
+   }
+   main{
+    display: flex;
+   }
+   .window ul{
+    list-style: none;
+    font-size: 2rem;
+    font-family: 'NinjaStrike';
+    margin-bottom: 1rem;
+    color: rgb(215, 208, 15) ;
+   }
+   @media only screen and (max-width: 1020px) {
+    main{
+        flex-direction: column;
+    }
+
+    .block{
+        padding: 1rem;
+        border: 3px solid black;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+   }
+   .order h2{
+    font-size: 2rem;
+    font-family: 'NinjaStrike';
+    color: #ffcc00;
+    text-align: center;
+}
+
+#order-form{
+    margin: 0 auto;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-family: 'NinjaStrike';
+    color: #ffcc00;
+}
+
+
+#order-form input {
+  border: none;
+  background-color: #ffcc00;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+#submit {
+  align-items: center;
+  font-weight: bold;
+}
+
+#submit:hover {
+  background-color: #bd3c11;
+  color: #ffcc00;
+  border: 2px solid #ffcc00;
+  cursor: pointer;
+}
+
+#order-table {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    padding-bottom: 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#order-table th{
+    font-size: 1.5rem;
+    color: #ffcc00;
+    /* box-shadow: ; */
+    font-weight: bold;
+    padding: 0.5rem;
+    border: 2px solid #ffcc00;
+}
+#order-table td{
+    font-size: 1.2rem;
+    color: #ffcc00;
+    padding: 0.5rem;
+    border: 2px solid #ffcc00;
+
+}
+

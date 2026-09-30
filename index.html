@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+
+<head>
+    <title>Lesson</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>China Town</h1>
+        <img class="lantern lf" src="assets/img/lantern.svg"> 
+        <img class="lantern rt" src="assets/img/lantern.svg"> 
+
+    </header>
+    
+    <main>
+        <div class ="house">
+            <img src="assets/img/roof.svg" class="roof">
+
+            <div class ="block">   
+
+                <div class="window">
+                    <h2>chef</h2>
+                    <img src="assets/img/Снимок экрана 2026-09-09 192744.png" class="chef"> 
+
+                </div>
+
+            </div>   
+
+        </div>
+
+        <div class ="house">
+            <img src="assets/img/roof.svg" class="roof">
+
+            <div class ="block">   
+
+                <div class="window">
+                    <h2>menu</h2>
+                    <ul    class="menu">
+
+                        
+                    <li>FRIED RICE</li>
+                    <li>PEKING DUCK</li>
+                    <li>STINKY TOFU</li>
+                    <li>CHOW MEIN</li>
+                    <li>CONGEE</li>
+                    <li>CHINESE HAMBURGER</li>
+                    <li>SCALLION PANCAKES</li>
+                    <li>KUNG PAO CHICKEN</li>
+
+
+                    </ul> 
+
+                </div>
+
+            </div>   
+
+        </div>
+
+
+    </main>
+
+    <section class ="order">    
+        <h2>order now</h2>
+        <form id="order-form">
+            <label for="dish">Dish</label>
+                <input id="dish" type="text" placeholder="fried rice" required>
+
+            <label for="time">time</label>
+                <input id="time" type="time">
+
+            <label for="address">address</label>
+                <input id="address" type="text" placeholder="your address" required> 
+
+            <label for="tel">telephone</label>
+                <input id="tel" type="tel" placeholder="+7 (999) 999-99-99" required>
+                
+                <input type="submit" value="order">
+
+        </form>
+
+        <table id="order-table">
+            <tr>
+                <th>dish</th>
+                <th>time</th>
+                <th>address</th>
+                <th>telephone</th>
+                <th>download</th>
+
+
+            </tr>
+
+
+        </table>
+    </section>
+
+
+</body>
+
+</html>
